@@ -1,6 +1,5 @@
+
 import SectionHeading from "../components/common/SectionHeading"
-import ProjectCard from "../components/projects/ProjectCard"
-import { projects } from "../data/projects"
 
 export default function Projects() {
   return (
@@ -9,20 +8,14 @@ export default function Projects() {
       className="scroll-mt-32 border-b border-neutral-200 py-24"
     >
       <SectionHeading
-        number="02"
+        number="01"
         label="PROJECTS"
         title="Selected work."
       />
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={project.title}
-            project={project}
-            index={index}
-          />
-        ))}
-      </div>
+      <p className="mt-6 max-w-2xl text-sm leading-7 text-neutral-500">
+        Projects will be added here as they're ready to share.
+      </p>
     </section>
   )
 }
