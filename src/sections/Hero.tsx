@@ -55,12 +55,12 @@ export default function Hero() {
             into meaningful experiences.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-6 font-mono text-sm">
+          <div className="mt-10 flex flex-wrap items-center gap-6 font-mono text-sm">  
             <a
-              href="#projects"
-              className="border-b border-neutral-900 pb-1 font-medium transition hover:text-neutral-500"
+                href="#stack"
+                className="border-b border-neutral-900 pb-1 font-medium transition hover:text-neutral-500"
             >
-              View Projects ↗
+                Explore My Skills ↗
             </a>
 
             <a
