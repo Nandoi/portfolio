@@ -1,7 +1,14 @@
+
 import SocialLinks from "../common/SocialLinks"
 import NavigationLinks from "../common/NavigationLinks"
 
-export default function Sidebar() {
+type SidebarProps = {
+  activeSection: string
+}
+
+export default function Sidebar({
+  activeSection,
+}: SidebarProps) {
   return (
     <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col justify-between overflow-y-auto border-r border-neutral-200 bg-white px-8 py-10 lg:flex">
       <div>
@@ -22,16 +29,15 @@ export default function Sidebar() {
           <SocialLinks />
         </div>
 
-        {/* Internal navigation */}
+        {/* Navigation */}
         <nav
           aria-label="Main navigation"
-          className="mt-10 flex flex-col gap-5"
+          className="mt-10 flex flex-col gap-1"
         >
-          <NavigationLinks />
+          <NavigationLinks activeSection={activeSection} />
         </nav>
       </div>
 
-      {/* Sidebar footer */}
       <div className="border-t border-neutral-200 pt-6">
         <p className="text-xs leading-6 text-neutral-500">
           Learning. Building. Creating.
