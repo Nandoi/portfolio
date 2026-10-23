@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { navigation } from "../data/navigation"
 
 export default function useActiveSection() {
-  const [activeSection, setActiveSection] = useState("home")
+  const [activeSection, setActiveSection] = useState("")
 
   useEffect(() => {
     const sections = navigation
@@ -13,6 +13,16 @@ export default function useActiveSection() {
     if (sections.length === 0) return
 
     const updateActiveSection = () => {
+      const atBottom =
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 4
+
+      // Always highlight Contact at the bottom.
+      if (atBottom) {
+        setActiveSection(sections[sections.length - 1].id)
+        return
+      }
+
       const referenceLine = window.innerHeight * 0.35
 
       const currentSection = [...sections]
@@ -22,23 +32,20 @@ export default function useActiveSection() {
             section.getBoundingClientRect().top <= referenceLine
         )
 
-      setActiveSection(currentSection?.id ?? "home")
+      // No navigation item is highlighted in the hero.
+      setActiveSection(currentSection?.id ?? "")
     }
 
-    const observer = new IntersectionObserver(
-      updateActiveSection,
-      {
-        rootMargin: "-35% 0px -60% 0px",
-        threshold: 0,
-      }
-    )
-
-    sections.forEach((section) => observer.observe(section))
-
+    window.addEventListener("scroll", updateActiveSection, {
+      passive: true,
+    })
     window.addEventListener("resize", updateActiveSection)
 
+    const frameId = window.requestAnimationFrame(updateActiveSection)
+
     return () => {
-      observer.disconnect()
+      window.cancelAnimationFrame(frameId)
+      window.removeEventListener("scroll", updateActiveSection)
       window.removeEventListener("resize", updateActiveSection)
     }
   }, [])

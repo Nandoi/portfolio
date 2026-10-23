@@ -3,8 +3,10 @@ import Sidebar from "./components/layout/Sidebar"
 import MobileHeader from "./components/layout/MobileHeader"
 
 import Hero from "./sections/Hero"
-import About from "./sections/About"
+import Projects from "./sections/Projects"
 import TechStack from "./sections/TechStack"
+import GithubContributions from "./sections/GithubContributions"
+import Certificates from "./sections/Certificates"
 import BeyondCode from "./sections/BeyondCode"
 import Contact from "./sections/Contact"
 
@@ -21,8 +23,10 @@ function App() {
       <main className="lg:ml-64">
         <div className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
           <Hero />
-          <About />
+          <Projects />
           <TechStack />
+          <GithubContributions />
+          <Certificates />
           <BeyondCode />
           <Contact />
 
