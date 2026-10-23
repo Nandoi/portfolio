@@ -6,7 +6,7 @@ export default function TechStack() {
   return (
     <section
       id="stack"
-      className="scroll-mt-32 border-b border-neutral-200 py-24"
+      className="scroll-mt-32 border-b border-neutral-200 py-14 sm:py-16"
     >
       <SectionHeading
         number="02"
@@ -35,7 +35,7 @@ export default function TechStack() {
             </div>
 
             {/* Technology cards */}
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 min-[400px]:grid-cols-2 sm:grid-cols-3">
               {category.skills.map((skill) => {
                 const Icon = skill.icon
 
@@ -43,13 +43,13 @@ export default function TechStack() {
                   <div
                     key={skill.name}
                     className="group flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-4 py-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-300 hover:bg-neutral-50"
-                  >
+                  > 
                     <Icon
                       aria-hidden="true"
                       className="h-5 w-5 shrink-0 text-neutral-600 transition-colors group-hover:text-neutral-900"
                     />
 
-                    <span className="text-sm font-medium text-neutral-700 group-hover:text-neutral-900">
+                    <span className="min-w-0 break-words text-sm font-medium leading-5 text-neutral-700 group-hover:text-neutral-900">
                       {skill.name}
                     </span>
                   </div>
