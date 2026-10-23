@@ -1,0 +1,26 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #171717;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Subtle dotted background */
+.dot-grid {
+  background-image:
+    radial-gradient(#e8e8e8 0.8px, transparent 0.8px);
+  background-size: 22px 22px;
+}
