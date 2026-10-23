@@ -5,7 +5,7 @@ A minimalist and responsive personal portfolio built with React, TypeScript, Tai
 
 This website showcases my technical skills, GitHub activity, and journey as an Information Technology student and aspiring software developer.
 
-**[View Live Portfolio](https://fernando-portfolio-gules.vercel.app/)**
+**[View Live Portfolio](https://fernandovidal.vercel.app/)**
 
 ---
 
@@ -111,7 +111,7 @@ The portfolio is deployed on Vercel and connected to the GitHub repository.
 
 Changes merged into the `main` branch trigger a new production deployment.
 
-**Live Website:** https://fernando-portfolio-gules.vercel.app/
+**Live Website:** https://fernandovidal.vercel.app/
 
 ## Future Improvements
 
@@ -130,4 +130,4 @@ Bulacan State University
 
 - [GitHub](https://github.com/Nandoi)
 - [LinkedIn](https://www.linkedin.com/in/fernando-iii-vidal-905a73385/)
-- [Portfolio](https://fernando-portfolio-gules.vercel.app/)
+- [Portfolio](https://fernandovidal.vercel.app/)
