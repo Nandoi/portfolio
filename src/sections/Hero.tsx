@@ -44,7 +44,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 text-sm text-neutral-500">
-            IT Student · Aspiring Software Developer
+            BSIT Student · Aspiring Software Developer
           </p>
 
           <div className="mt-6 max-w-lg space-y-4 text-sm leading-7 text-neutral-600">
