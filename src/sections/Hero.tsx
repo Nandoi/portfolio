@@ -18,9 +18,11 @@ export default function Hero() {
               <img
                 src="/profile.jpg"
                 alt="Portrait of Fernando Vidal"
+                loading="eager"
+                fetchPriority="high"
                 onError={() => setPhotoAvailable(false)}
                 className="h-full w-full object-cover"
-              />
+                />
             ) : (
               <div className="flex h-full items-center justify-center">
                 <span className="font-mono text-6xl text-neutral-300">
