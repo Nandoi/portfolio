@@ -10,11 +10,12 @@ export default function MobileHeader({
   activeSection,
 }: MobileHeaderProps) {
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/95 px-5 py-4 backdrop-blur lg:hidden">
+    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/95 px-4 py-3 backdrop-blur sm:px-6 sm:py-4 lg:hidden">
+
       <div className="flex items-center justify-between gap-4">
         <a
           href="#home"
-          className="font-mono font-semibold"
+          className="shrink-0 font-mono text-sm font-semibold sm:text-base"
         >
           Fernando.
         </a>
@@ -24,7 +25,7 @@ export default function MobileHeader({
 
       <nav
         aria-label="Mobile navigation"
-        className="mt-3 flex gap-5 overflow-x-auto pb-1"
+        className="-mx-4 mt-3 flex gap-4 overflow-x-auto overscroll-x-contain px-4 pb-1 sm:-mx-6 sm:px-6"
       >
         <NavigationLinks
           mobile

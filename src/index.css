@@ -24,3 +24,9 @@ body {
     radial-gradient(#e8e8e8 0.8px, transparent 0.8px);
   background-size: 22px 22px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

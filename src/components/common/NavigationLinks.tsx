@@ -18,14 +18,14 @@ export default function NavigationLinks({
         if (mobile) {
           return (
             <a
-              key={item.href}
-              href={item.href}
-              aria-current={isActive ? "location" : undefined}
-              className={`shrink-0 border-b-2 pb-1 text-xs transition-colors ${
+            key={item.href}
+            href={item.href}
+            aria-current={isActive ? "location" : undefined}
+            className={`shrink-0 whitespace-nowrap border-b-2 px-1 py-3 font-mono text-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 ${
                 isActive
-                  ? "border-neutral-900 font-semibold text-neutral-900"
-                  : "border-transparent text-neutral-500 hover:text-neutral-900"
-              }`}
+                    ? "border-neutral-900 font-semibold text-neutral-900"
+                    : "border-transparent text-neutral-500 hover:text-neutral-900"
+                }`}
             >
               {item.label}
             </a>

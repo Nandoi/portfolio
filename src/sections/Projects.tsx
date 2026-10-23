@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-32 border-b border-neutral-200 py-24"
+      className="scroll-mt-32 border-b border-neutral-200 py-12 sm:py-14"
     >
       <SectionHeading
         number="01"
