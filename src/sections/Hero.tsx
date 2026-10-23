@@ -49,7 +49,7 @@ export default function Hero() {
 
           <div className="mt-6 max-w-lg space-y-4 text-sm leading-7 text-neutral-600">
             <p>
-              I'm an Information Technology student at
+              I'm a BSIT student at
               Bulacan State University, exploring software
               development, and web technologies.
             </p>
