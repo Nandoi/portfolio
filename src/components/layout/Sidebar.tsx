@@ -16,7 +16,7 @@ export default function Sidebar({
           href="#home"
           className="font-mono text-base font-semibold tracking-tight"
         >
-          Fernando III Vidal
+          Fernando Vidal
           <span className="text-neutral-400">.</span>
         </a>
 
