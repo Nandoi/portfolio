@@ -1,6 +1,6 @@
 
-import MobileHeader from "./components/layout/MobileHeader"
 import Sidebar from "./components/layout/Sidebar"
+import MobileHeader from "./components/layout/MobileHeader"
 
 import Hero from "./sections/Hero"
 import About from "./sections/About"
@@ -9,11 +9,15 @@ import TechStack from "./sections/TechStack"
 import BeyondCode from "./sections/BeyondCode"
 import Contact from "./sections/Contact"
 
+import useActiveSection from "./hooks/useActiveSection"
+
 function App() {
+  const activeSection = useActiveSection()
+
   return (
     <div className="min-h-screen bg-white text-neutral-900">
-      <Sidebar />
-      <MobileHeader />
+      <Sidebar activeSection={activeSection} />
+      <MobileHeader activeSection={activeSection} />
 
       <main className="lg:ml-64">
         <div className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
