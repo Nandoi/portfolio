@@ -4,7 +4,6 @@ import MobileHeader from "./components/layout/MobileHeader"
 
 import Hero from "./sections/Hero"
 import About from "./sections/About"
-import Projects from "./sections/Projects"
 import TechStack from "./sections/TechStack"
 import BeyondCode from "./sections/BeyondCode"
 import Contact from "./sections/Contact"
@@ -23,7 +22,6 @@ function App() {
         <div className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
           <Hero />
           <About />
-          <Projects />
           <TechStack />
           <BeyondCode />
           <Contact />
