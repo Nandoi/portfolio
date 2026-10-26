@@ -13,7 +13,7 @@ export default function About() {
       />
 
       <p className="mt-6 max-w-2xl text-sm leading-8 text-neutral-600">
-        I'm an Information Technology student at Bulacan
+        I'm an BSIT student at Bulacan
         State University, learning software development,
         database systems, and the technologies behind
         modern applications. This portfolio documents
